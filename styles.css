@@ -1,0 +1,82 @@
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+#title {
+	text-align: center;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+#description {
+	text-align: center;
+	margin-bottom: 30px;
+	color: #666;
+}
+
+#treemap-container {
+	position: relative;
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+}
+
+.tile {
+	stroke: #fff;
+	stroke-width: 1px;
+	transition: opacity 0.2s;
+}
+
+.tile:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.tile-text {
+	font-size: 8px;
+	fill: #000;
+	pointer-events: none;
+}
+
+.tooltip {
+	position: absolute;
+	display: none;
+	background: white;
+	padding: 10px;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	font-size: 12px;
+	pointer-events: none;
+	z-index: 10;
+}
+
+.tooltip p {
+	margin: 0;
+	padding: 2px 0;
+}
+
+.tooltip .game-name {
+	font-weight: bold;
+}
+
+#legend {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+.legend-item {
+	stroke: #fff;
+	stroke-width: 1px;
+}
+
+.legend-label {
+	font-size: 12px;
+	dominant-baseline: middle; /* For SVG text alignment */
+	vertical-align: middle; /* For regular text alignment */
+}
